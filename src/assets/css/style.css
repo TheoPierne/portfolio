@@ -1,0 +1,7 @@
+.slider-navigation-next, .slider-navigation-previous {
+	right: 15px;
+}
+
+.slider-navigation-previous {
+	left: 15px;
+}

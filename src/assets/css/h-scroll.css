@@ -1,0 +1,30 @@
+ .scrolling-wrapper {
+ 	overflow-x: scroll;
+ 	overflow-y: hidden;
+ 	white-space: nowrap;
+ }
+ .scrolling-wrapper .card-scroll {
+ 	display: inline-block;
+ }
+ .scrolling-wrapper-flexbox {
+ 	display: flex;
+ 	flex-wrap: nowrap;
+ 	overflow-x: auto;
+ }
+ .scrolling-wrapper-flexbox .card-scroll {
+ 	flex: 0 0 auto;
+ 	margin-right: 3px;
+ }
+ .card-scroll {
+ 	border: 2px solid red;
+ 	background: black;
+ }
+ .scrolling-wrapper, .scrolling-wrapper-flexbox {
+ 	max-height: 5rem;
+ 	margin-bottom: 20px;
+ 	width: 100%;
+ 	-webkit-overflow-scrolling: touch;
+ }
+ .scrolling-wrapper::-webkit-scrollbar, .scrolling-wrapper-flexbox::-webkit-scrollbar {
+ 	display: none;
+ }
