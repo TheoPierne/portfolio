@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Théo Pierné",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.2"
+  }
 }

@@ -1,7 +1,15 @@
-const buttonSection = document.getElementById('listSection');
-const button = Array.from(buttonSection.children);
+(function () {
+	/*const scroll = new LocomotiveScroll({
+		el: document,
+		smooth: true,
+		direction: 'vertical',
+		scrollFromAnywhere: true,
+		reloadOnContextChange: true
+	});
+	console.log(scroll)*/
+})();
 
-const [carousel] = bulmaCarousel.attach('#carousel-demo', {
+/*const [carousel] = bulmaCarousel.attach('#carousel-demo', {
 	navigation: false,
 	slidesToScroll: 1,
 	slidesToShow: 4,
@@ -20,4 +28,4 @@ const [carousel] = bulmaCarousel.attach('#carousel-demo', {
 carousel.on('before:show', e => {
 	button[e.next].classList.add('is-active');
 	button[e.index].classList.remove('is-active');
-});
+});*/

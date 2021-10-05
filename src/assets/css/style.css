@@ -5,3 +5,18 @@
 .slider-navigation-previous {
 	left: 15px;
 }
+
+.back-animation {
+	-webkit-text-stroke: 1px white; 
+	color: transparent !important; 
+	background: url("../img/back.png"); 
+	-webkit-background-clip: text; 
+	background-position: 0 0; 
+	animation: back 20s linear infinite;
+}
+
+@keyframes back {
+	100% {
+		background-position: 2000px 0;
+	}
+}
