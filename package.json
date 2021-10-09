@@ -9,6 +9,7 @@
   "author": "Théo Pierné",
   "license": "ISC",
   "dependencies": {
+    "@creativebulma/bulma-collapsible": "^1.0.4",
     "locomotive-scroll": "^4.1.2"
   }
 }

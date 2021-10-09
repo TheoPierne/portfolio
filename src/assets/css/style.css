@@ -64,4 +64,15 @@ img.logo-discord {
     background: inherit;
 }
 
+.fa-angle-down{
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.fa-angle-down.open{
+  transform: rotate(-180deg);
+  transition: transform 0.2s linear;
+}
+};
+
 /* Fin Style V2 */
