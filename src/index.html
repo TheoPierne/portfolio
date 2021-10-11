@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr"> <!--class="has-navbar-fixed-top"-->
 <head>
 	<meta charset="utf-8">
 	<title>Théo Pierné - Développeur Web Full Stack</title>
-	<meta name="theme-color" content="#333">
+	<meta name="theme-color" content="#fff">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	<meta name="title" content="Théo Pierné - Développeur Web Full Stack">
@@ -15,107 +15,375 @@
 	<meta property="og:url" content="https://theo-pierne.com/">
 	<meta property="og:title" content="Théo Pierné - Développeur Web Full Stack">
 	<meta property="og:description" content="Portfolio de Théo Pierné présentant ses créations et ses certifications.">
-	<!--<meta property="og:image" content="https://i1.sndcdn.com/artworks-odwujhMrx5vnJ6Ed-6WsDbg-t500x500.jpg">-->
+	<meta property="og:image" content="./assets/img/bitmoji_1.png">
 	<!-- End Open Graph -->
 	<!-- Twitter -->
 	<meta property="twitter:card" content="summary_large_image">
 	<meta property="twitter:url" content="https://theo-pierne.com/">
 	<meta property="twitter:title" content="Théo Pierné - Développeur Web Full Stack">
 	<meta property="twitter:description" content="Portfolio de Théo Pierné présentant ses créations et ses certifications.">
-	<!--<meta property="twitter:image" content="https://i1.sndcdn.com/artworks-odwujhMrx5vnJ6Ed-6WsDbg-t500x500.jpg">-->
+	<meta property="twitter:image" content="./assets/img/bitmoji_1.png">
 	<!-- End Twitter -->
+	<link rel="preload" href="./assets/webfonts/fa-brands-400.woff2" as="font" type="font/woff2">
+	<link rel="preload" href="./assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2">
 	<link rel="stylesheet" type="text/css" href="./assets/css/bulma.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/locomotive-scroll.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/all.css">
-	
-	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/bitmoji_1.png">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bulma-collapsible.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/bitmoji_3.png">
+
+	<link rel="preconnect" href="https://twemoji.maxcdn.com/">
+	<link rel="dns-prefetch" href="https://www4.ac-nancy-metz.fr/">
+	<link rel="dns-prefetch" href="https://cdn.discordapp.com/">
+	<link rel="dns-prefetch" href="https://i.imgur.com/">
+	<link rel="preload" href="./assets/img/back.png" as="image" type="image/png">
+	<link rel="preload" href="https://cdn.discordapp.com/avatars/476671594962354177/3368fd06f12380353d74761a1835a4d9.png" as="image" type="image/png">
+	<link rel="preload" href="https://i.imgur.com/m67XYDX.png" as="image" type="image/png">
+	<link rel="prefetch" href="https://www4.ac-nancy-metz.fr/lyc-loritz/telechargements/lycee/formations/bts/plaquettes/loritz_plaquette_snir.pdf" as="embed" type="application/pdf">
+	<link rel="prefetch" href="https://www4.ac-nancy-metz.fr/lyc-loritz/telechargements/lycee/formations/bac/plaquettes/loritz_plaquette_sin.pdf" as="embed" type="application/pdf">
 </head>
 <body>
-	<section class="hero is-fullheight is-dark">
-
-		<div class="hero-head">
-			<header class="navbar">
-				<div class="container">
-					<div class="navbar-brand">
-						<a class="navbar-item">
-							<img src="./assets/img/bitmoji_1.png" alt="Logo" loading="lazy">
-						</a>
-						<span class="navbar-burger" data-target="navbarMenuHero">
-							<span></span>
-							<span></span>
-							<span></span>
+	<header class="hero is-dark">
+		<!--<nav class="navbar is-dark is-fixed-top">
+			<div class="container">
+				<div class="navbar-brand">
+					<a class="navbar-item">
+						<img src="./assets/img/bitmoji_1.png" alt="Logo" loading="lazy">
+					</a>
+					<span class="navbar-burger" data-target="navbarMenuHero">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</div>
+				<div id="navbarMenuHero" class="navbar-menu">
+					<div class="navbar-end">
+						<span class="navbar-item">
+							<a class="button is-dark is-inverted" href="https://github.com/TheoPierne/" target="_blank">
+								<span class="icon">
+									<i class="fab fa-github"></i>
+								</span>
+								<span>Github</span>
+							</a>
+						</span>
+						<span class="navbar-item">
+							<a class="button is-dark is-inverted" href="https://www.linkedin.com/in/theo-pierne/" target="_blank">
+								<span class="icon">
+									<i class="fab fa-linkedin"></i>
+								</span>
+								<span>LinkedIn</span>
+							</a>
 						</span>
 					</div>
-					<div id="navbarMenuHero" class="navbar-menu">
-						<div class="navbar-end">
-							<span class="navbar-item">
-								<a class="button is-dark is-inverted" href="https://github.com/TheoPierne/" target="_blank">
+				</div>
+			</div>
+		</nav>-->
+		<div class="hero-body">
+			<div class="container has-text-centered">
+				<img src="./assets/img/bitmoji_3.png" class="is-rounded" alt="Bitmoji Théo Pierné">
+				<h1 class="title is-1 back-animation">THÉO PIERNÉ</h1>
+				<h2 class="subtitle">Développeur Web Fullstack & Développeur de Bot <img src="./assets/img/discord-blue.png" alt="Logo Discord bleu" class="logo-discord"> !</h2>
+			</div>
+		</div>
+	</header>
+
+	<section class="hero is-dark">
+		<div class="container is-fluid">
+			<div class="content">
+				<section class="section">
+					<div class="box is-black">
+						<nav class="level">
+							<div class="level-item has-text-centered">
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="https://github.com/TheoPierne/" target="_blank">
 									<span class="icon">
 										<i class="fab fa-github"></i>
 									</span>
 									<span>Github</span>
 								</a>
-							</span>
-							<span class="navbar-item">
-								<a class="button is-dark is-inverted" href="https://www.linkedin.com/in/theo-pierne/" target="_blank">
+							</div>
+							<div class="level-item has-text-centered">
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="https://www.linkedin.com/in/theo-pierne/" target="_blank">
 									<span class="icon">
 										<i class="fab fa-linkedin"></i>
 									</span>
 									<span>LinkedIn</span>
 								</a>
-							</span>
-						</div>
-					</div>
-				</div>
-			</header>
-		</div>
-
-		<div class="hero-body">
-			<div class="container">
-				<div class="content">
-					<div id="carousel-demo" class="carousel">
-						<div class="item-1">
-							<div class="box">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec venenatis vel leo scelerisque fermentum. Curabitur dapibus, leo id rutrum dapibus, risus odio lobortis ligula, tristique dignissim erat purus vel lacus. Cras consectetur id metus eu hendrerit. Praesent fermentum pharetra sagittis. Fusce pretium purus nec dui dapibus, a fermentum ipsum eleifend. Cras dignissim sed neque nec consequat. Sed posuere lorem in eros mollis finibus. Morbi quam neque, lacinia at sem et, ornare faucibus massa. Pellentesque in ligula ultrices, hendrerit lacus bibendum, hendrerit odio. Vivamus venenatis blandit nunc in porta. Aliquam sollicitudin diam vitae metus laoreet lacinia. Maecenas eu nisi imperdiet, pulvinar libero et, euismod eros. Nam mollis odio sit amet libero mattis, ut mattis libero rhoncus. Aenean fermentum orci vitae lorem tincidunt, a lacinia magna rhoncus. Donec sed gravida mauris, vel tincidunt felis.</p>
-
-								<p>Nam finibus, tellus aliquet tincidunt elementum, lacus nibh suscipit sem, eu iaculis eros mauris volutpat diam. Donec porttitor consequat dui sit amet egestas. Integer consectetur sapien augue, eu aliquet eros consectetur et. Ut laoreet aliquet risus, in accumsan felis pulvinar in. Vestibulum feugiat eleifend augue in vestibulum. Donec fermentum blandit ipsum, eget luctus lacus semper nec. Duis nec blandit augue. Quisque et pretium nisi. Mauris sodales felis ac dictum mattis. Morbi id dui sit amet massa vestibulum efficitur vitae id dui. Integer hendrerit, orci sed condimentum tincidunt, velit est sagittis magna, non semper lectus sem et metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lectus mi, porttitor ut erat ut, porta hendrerit eros. Praesent neque justo, egestas nec tristique eget, accumsan ac leo.</p>
 							</div>
-							<!--<img class="is-background" src="https://wikiki.github.io/images/merry-christmas.jpg" alt="" loading="lazy">-->
-
+							<div class="level-item has-text-centered">
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="mailto:theo.pierne2@gmail.com">
+									<span class="icon">
+										<i class="fas fa-at"></i>
+									</span>
+									<span>Mail</span>
+								</a>
+							</div>
+						</nav>
+					</div>		
+				</section>
+				<div class="divider is-m10"></div>
+				<section class="section">
+					<div class="has-text-centered">
+						<p class="title">#PROJETS</p>
+					</div>
+					<br>
+					<div class="columns">
+						<div class="column is-narrow">
+							<div class="box">
+								<nav class="panel">
+									<p class="panel-heading"></p>
+									<div class="panel-block" data-category="search">
+										<p class="control has-icons-left">
+											<input class="input" type="text" placeholder="Rechercher">
+											<span class="icon is-left">
+												<i class="fas fa-search" aria-hidden="true"></i>
+											</span>
+										</p>
+									</div>
+									<p class="panel-tabs" id="categorySelector">
+										<a class="is-active category" data-type="all">Tout</a>
+										<a data-type="public">Public</a>
+										<a data-type="private">Privé</a>
+									</p>
+									<a class="panel-block hidden-project is-hidden" data-category="public" data-target="portfolio">
+										<span class="panel-icon">
+											<i class="fas fa-book" aria-hidden="true"></i>
+										</span>
+										Portfolio 👀
+									</a>
+									<a class="panel-block is-active" data-category="private" data-target="ddd-irr">
+										<span class="panel-icon">
+											<i class="fas fa-book" aria-hidden="true"></i>
+										</span>
+										Dissociateur de doigts
+									</a>
+									<a class="panel-block" data-category="private" data-target="flower">
+										<span class="panel-icon">
+											<i class="fas fa-book" aria-hidden="true"></i>
+										</span>
+										Flower-Bot
+									</a>
+									<a class="panel-block" data-category="public" data-target="spot.js">
+										<span class="panel-icon">
+											<i class="fas fa-book" aria-hidden="true"></i>
+										</span>
+										Spot SDK Node.js
+									</a>
+									<a class="panel-block" data-category="public" data-target="acnhMsgBox">
+										<span class="panel-icon">
+											<i class="fas fa-book" aria-hidden="true"></i>
+										</span>
+										Animal Crossing Message Box
+									</a>
+									<div class="panel-block is-hidden" id="hiddenOption">
+										<label class="panel-block">
+											<input type="checkbox" id="showHiddenProjects">
+											Afficher les projets cachés
+										</label>
+									</div>
+								</nav>					
+							</div>						
 						</div>
-						<div class="item-2">
-							<img src="https://wikiki.github.io/images/singer.jpg" alt="" loading="lazy">
-						</div>
-						<div class="item-3">
-							<img src="https://wikiki.github.io/images/sushi.jpg" alt="" loading="lazy">
+						<div class="column">
+							<div class="box is-black">
+								<div class="card">
+									<div class="card-content" id="projectCardContent">
+										<div class="media">
+											<div class="media-left">
+												<figure class="image is-48x48">
+													<img src="./assets/img/logoMano.png" alt="logo projet dissociateur de doigts" load="lazy">
+												</figure>
+											</div>
+											<div class="media-content">
+												<p class="title is-4 has-text-dark">Dissociateur de doigts</p>
+												<p class="subtitle is-6 has-text-dark">En collaboration avec l'IRR de Lay-Saint-Christophe</p>
+											</div>
+										</div>
+										<div class="content">
+											<p>
+												Dans le cadre du projet de deuxièmes années de BTS SNIR, en collaboration avec l'Institut Régional de Réadaptation de Lay-Saint-Christophe, j'ai dû en tant que chef de projet gérer une équipe de 2 personnes, Nicolas Motel développeur de l'interface de l'application web et Louis Thirion développeur/concepteur du prototype de gants connectés. Nous avons dû travailler à la réalisation d'une application web et d'un prototype permettant le suivi de l'évolution de la rééducation des doigts des patients de l'IRR, grâce aux différents exercices créés par les médecins dans l'application. En tant que développeur j'ai développé l'interface graphique des paramètres de l'application, ainsi que la partie backend de l'application web.
+											</p>
+											<div id="accordion_first">
+												<article class="message">
+													<div class="message-header">
+														<p><a href="#collapsible-tools" data-action="collapse">Outils utilisés</a></p>
+													</div>
+													<div id="collapsible-tools" class="message-body is-collapsible" data-parent="accordion_first">
+														<div class="message-body-content content">
+															<p><strong>IDE:</strong> Sublime Text 3, Arduino IDE</p>
+															<p><strong>Gestion de projet:</strong> Git, GitHub, Google Drive, Trello, Discord</p>
+															<p><strong>Langages:</strong> JavaScript, HTML5, CSS3, EJS, C/C++</p>
+															<p><strong>Frameworks:</strong> Node.js, Electron.js</p>
+															<p><strong>Librairies:</strong> Express.js, Bulma.io, Socket.io, Moment.js, HighCharts, SerialPort</p>
+															<p><strong>Suite Office:</strong> Word, PowerPoint, Excel</p>
+														</div>
+													</div>
+												</article>
+											</div>
+											<br>
+											<a class="button github-link is-ligth is-fullwidth is-hidden" target="_blank" href="">
+												<span class="icon">
+													<i class="fab fa-github"></i>
+												</span>
+												<span>Lien GitHub</span>
+											</a>
+											<br class="is-hidden">
+											<time class="first" datetime="2020-12-18">18/12/2020</time> • <time class="second" datetime="2021-06-16">16/06/2021</time>
+										</div>
+									</div>
+								</div>
+							</div>						
 						</div>
 					</div>
-				</div>
+				</section>
+				<div class="divider is-m10"></div>
+				<section class="section">
+					<div class="has-text-centered">
+						<p class="title">#DIPLÔMES</p>
+					</div>
+					<br>
+					<div class="box">
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-48x48">
+									<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><img src="./assets/img/loritz.jpg" alt="logo lycée henri loritz" load="lazy"></a>
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><strong>Lycée Henri Loritz</strong></a> - <small>Nancy 54000</small>
+										<br>
+										BTS Systèmes Numériques option Informatique et Réseaux (SNIR)
+										<br>
+										<small>2019 - 2021</small>
+									</p>
+								</div>
+								<nav class="level is-mobile">
+									<div class="level-left">
+										<a class="level-item">
+											<button class="button is-light is-small open-dropdown" data-target="BTS">
+												<span class="icon is-small">
+													<i class="fas fa-angle-down"></i>
+												</span>
+											</button>
+										</a>
+									</div>
+								</nav>
+								<article class="media is-hidden" id="PDFBTS">
+									<figure class="media-left is-hidden-touch">
+										<p class="image is-1by1">
+											<img src="./assets/img/bts-SNIR.png" alt="logo bts SNIR" load="lazy">
+										</p>
+									</figure>
+									<div class="media-content">
+										<div class="content">
+											<p>
+												<strong>Présentation BTS SNIR</strong>
+												<br>
+												<div id="PDFViewerBTS"></div>										
+												<br>
+											</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</article>
+						<article class="media">
+							<figure class="media-left">
+								<p class="image is-48x48">
+									<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><img src="./assets/img/loritz.jpg" alt="logo lycée henri loritz" load="lazy"></a>
+								</p>
+							</figure>
+							<div class="media-content">
+								<div class="content">
+									<p>
+										<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><strong>Lycée Henri Loritz</strong></a> - <small>Nancy 54000</small>
+										<br>
+										BAC Sciences et Technologies de l'Industrie et du Développement Durable option Système de l'Information et du Numérique (STI2D SIN)
+										<br>
+										<small>2017 - 2019</small>
+									</p>
+								</div>
+								<nav class="level is-mobile">
+									<div class="level-left">
+										<a class="level-item">
+											<button class="button is-light is-small open-dropdown" data-target="BAC">
+												<span class="icon is-small">
+													<i class="fas fa-angle-down"></i>
+												</span>
+											</button>
+										</a>
+									</div>
+								</nav>
+								<article class="media is-hidden" id="PDFBAC">
+									<figure class="media-left is-hidden-touch">
+										<p class="image is-1by1">
+											<img src="./assets/img/bac-SIN.png" alt="logo bac STI2D SIN" load="lazy">
+										</p>
+									</figure>
+									<div class="media-content">
+										<div class="content">
+											<p>
+												<strong>Présentation BAC STI2D SIN</strong>
+												<br>
+												<div id="PDFViewerBAC"></div>										
+												<br>
+											</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</article>
+					</div>									
+				</section>
+				<div class="divider is-m10"></div>
+				<section class="section">
+					<div class="has-text-centered">
+						<p class="title">#CERTIFICATIONS</p>
+					</div>
+					<br>
+					<div class="box is-black">
+						<div class="columns">
+							<div class="column">
+								<div class="box">
+									<div class="has-text-centered">
+										<a href="https://www.freecodecamp.org/" target="_blank"><img src="./assets/img/fcc-long-dark.png" alt="logo freeCodeCamp" load="lazy"></a>
+									</div>
+									<a href="https://freecodecamp.org/certification/fcc9af275e8-409d-4ef6-a0a4-e561776f6667/responsive-web-design" target="_blank" class="has-text-weight-semibold"><span class="tag is-success is-light"><i class="fas fa-check-circle"></i></span> Responsive Web Design</a><br>
+									<small>Délivrée en Septembre 2021.</small>
+								</div>							
+							</div>
+							<div class="column">
+								<div class="box">
+									<div class="has-text-centered">
+										<a href="https://www.freecodecamp.org/" target="_blank"><img src="./assets/img/fcc-long-dark.png" alt="logo freeCodeCamp" load="lazy"></a>
+									</div>
+									<a href="https://freecodecamp.org/certification/fcc9af275e8-409d-4ef6-a0a4-e561776f6667/back-end-development-and-apis" target="_blank" class="has-text-weight-semibold"><span class="tag is-success is-light"><i class="fas fa-check-circle"></i></span> Back End Development and APIs</a><br>
+									<small>Délivrée en Juillet 2021.</small>
+								</div>							
+							</div>
+							<div class="column">
+								<div class="box">
+									<div class="has-text-centered">
+										<a href="https://www.freecodecamp.org/" target="_blank"><img src="./assets/img/fcc-long-dark.png" alt="logo freeCodeCamp" load="lazy"></a>
+									</div>
+									<a href="https://freecodecamp.org/certification/fcc9af275e8-409d-4ef6-a0a4-e561776f6667/javascript-algorithms-and-data-structures" target="_blank" class="has-text-weight-semibold"><span class="tag is-success is-light"><i class="fas fa-check-circle"></i></span> JavaScript Algorithms and Data Structures</a><br>
+									<small>Délivrée en Janvier 2020.</small>
+								</div>								
+							</div>		
+						</div>
+					</div>					
+				</section>
 			</div>
-			
-		</div>
-
-		<div class="hero-foot">
-			<nav class="tabs is-boxed is-fullwidth">
-				<div class="container">
-					<ul id="listSection">
-						<li class="is-active" data-name="project"><a><strong>Projets</strong></a></li>
-						<li data-name="certification"><a><strong>Certifications</strong></a></li>
-						<li data-name="contact"><a><strong>Contact</strong></a></li>
-					</ul>
-				</div>
-			</nav>
 		</div>
 	</section>
-	<footer class="footer has-background-dark is-hidden">
-		<div class="container">
-			<div class="content has-text-centered">
-				<p class="title has-text-white">Test</p>
-			</div>
-		</div>
-	</footer>
-	<script src="./assets/js/bulma-carousel.js"></script>
+	<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+	<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
+	<script src="./assets/js/pdfobject.min.js"></script>
+	<script src="./assets/js/twemoji.min.js"></script>
+	<script src="./assets/js/locomotive-scroll.min.js"></script>
+	<script src="./assets/js/bulma-collapsible.min.js"></script>
 	<script src="./assets/js/index.js"></script>
 </body>
 </html>
