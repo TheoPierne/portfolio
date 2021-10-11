@@ -10,24 +10,11 @@
   # directory located at the absolute path "root/project/build-output"
   publish = "src/"
 
-# A basic redirect rule
-[[redirects]]
-  from = "/*"
-  to = "/blog/:splat"
-
-# A redirect rule with many of the supported properties
-[[redirects]]
-  from = "/old-path"
-  to = "/new-path"
-
-  # The default HTTP status code is 301, but you can define a different one.
-  status = 301
-
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
   from = "/*"
-  to = "/index_2.html"
+  to = "/index.html"
   status = 200
 
 [[headers]]
