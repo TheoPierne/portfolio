@@ -17,6 +17,20 @@
   to = "/index.html"
   status = 200
 
+# Sitemap.xml
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+
+# Robots.txt
+
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
