@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="has-navbar-fixed-top">
+<html lang="fr"> <!--class="has-navbar-fixed-top"-->
 <head>
 	<meta charset="utf-8">
 	<title>Théo Pierné - Développeur Web Full Stack</title>
@@ -25,16 +25,16 @@
 	<!--<meta property="twitter:image" content="https://i1.sndcdn.com/artworks-odwujhMrx5vnJ6Ed-6WsDbg-t500x500.jpg">-->
 	<!-- End Twitter -->
 	<link rel="stylesheet" type="text/css" href="./assets/css/bulma.css">
-	<link rel="stylesheet" type="text/css" href="../node_modules/@creativebulma/bulma-collapsible/dist/css/bulma-collapsible.min.css">
-	<link rel="stylesheet" href="./assets/css/locomotive-scroll.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/locomotive-scroll.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/all.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/bulma-collapsible.min.css">
 	
 	<link rel="shortcut icon" type="image/x-icon" href="./assets/img/bitmoji_3.png">
 </head>
 <body>
 	<header class="hero is-dark">
-		<nav class="navbar is-dark is-fixed-top">
+		<!--<nav class="navbar is-dark is-fixed-top">
 			<div class="container">
 				<div class="navbar-brand">
 					<a class="navbar-item">
@@ -67,7 +67,7 @@
 					</div>
 				</div>
 			</div>
-		</nav>
+		</nav>-->
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<img src="./assets/img/bitmoji_3.png" class="is-rounded" alt="Bitmoji Théo Pierné">
@@ -84,31 +84,31 @@
 					<div class="box is-black">
 						<nav class="level">
 							<div class="level-item has-text-centered">
-								<div>
-									<p class="heading">Tweets</p>
-									<p class="title">3,456</p>
-								</div>
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="https://github.com/TheoPierne/" target="_blank">
+									<span class="icon">
+										<i class="fab fa-github"></i>
+									</span>
+									<span>Github</span>
+								</a>
 							</div>
 							<div class="level-item has-text-centered">
-								<div>
-									<p class="heading">Following</p>
-									<p class="title">123</p>
-								</div>
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="https://www.linkedin.com/in/theo-pierne/" target="_blank">
+									<span class="icon">
+										<i class="fab fa-linkedin"></i>
+									</span>
+									<span>LinkedIn</span>
+								</a>
 							</div>
 							<div class="level-item has-text-centered">
-								<div>
-									<p class="heading">Followers</p>
-									<p class="title">456K</p>
-								</div>
-							</div>
-							<div class="level-item has-text-centered">
-								<div>
-									<p class="heading">Likes</p>
-									<p class="title">789</p>
-								</div>
+								<a class="button is-dark is-inverted is-medium is-fullwidth-mobile" href="mailto:theo.pierne2@gmail.com">
+									<span class="icon">
+										<i class="fas fa-at"></i>
+									</span>
+									<span>Mail</span>
+								</a>
 							</div>
 						</nav>
-					</div>					
+					</div>		
 				</section>
 				<div class="divider is-m10"></div>
 				<section class="section">
@@ -131,7 +131,7 @@
 									</div>
 									<p class="panel-tabs" id="categorySelector">
 										<a class="is-active category" data-type="all">Tout</a>
-										<a data-type="public">Publique</a>
+										<a data-type="public">Public</a>
 										<a data-type="private">Privé</a>
 									</p>
 									<a class="panel-block hidden-project is-hidden" data-category="public" data-target="portfolio">
@@ -156,7 +156,7 @@
 										<span class="panel-icon">
 											<i class="fas fa-book" aria-hidden="true"></i>
 										</span>
-										Spot SDK Node.JS
+										Spot SDK Node.js
 									</a>
 									<a class="panel-block" data-category="public" data-target="acnhMsgBox">
 										<span class="panel-icon">
@@ -176,11 +176,11 @@
 						<div class="column">
 							<div class="box is-black">
 								<div class="card">
-									<div class="card-content">
+									<div class="card-content" id="projectCardContent">
 										<div class="media">
 											<div class="media-left">
 												<figure class="image is-48x48">
-													<img src="./assets/img/logoMano.png" alt="projet dissociateur de doigts">
+													<img src="./assets/img/logoMano.png" alt="logo projet dissociateur de doigts">
 												</figure>
 											</div>
 											<div class="media-content">
@@ -210,7 +210,14 @@
 												</article>
 											</div>
 											<br>
-											<time datetime="2020-12-18">18/12/2020</time> • <time datetime="2021-06-16">16/06/2021</time>
+											<a class="button github-link is-ligth is-fullwidth is-hidden" target="_blank" href="">
+												<span class="icon">
+													<i class="fab fa-github"></i>
+												</span>
+												<span>Lien GitHub</span>
+											</a>
+											<br class="is-hidden">
+											<time class="first" datetime="2020-12-18">18/12/2020</time> • <time class="second" datetime="2021-06-16">16/06/2021</time>
 										</div>
 									</div>
 								</div>
@@ -227,7 +234,7 @@
 					<div class="box">
 						<article class="media">
 							<figure class="media-left">
-								<p class="image is-64x64">
+								<p class="image is-48x48">
 									<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><img src="./assets/img/loritz.jpg" alt="logo lycée henri loritz"></a>
 								</p>
 							</figure>
@@ -253,8 +260,8 @@
 									</div>
 								</nav>
 								<article class="media is-hidden" id="PDFBTS">
-									<figure class="media-left">
-										<p class="image is-48x48">
+									<figure class="media-left is-hidden-touch">
+										<p class="image is-1by1">
 											<img src="./assets/img/bts-SNIR.png">
 										</p>
 									</figure>
@@ -273,7 +280,7 @@
 						</article>
 						<article class="media">
 							<figure class="media-left">
-								<p class="image is-64x64">
+								<p class="image is-48x48">
 									<a href="https://www4.ac-nancy-metz.fr/lyc-loritz/index.php" target="_blank"><img src="./assets/img/loritz.jpg" alt="logo lycée henri loritz"></a>
 								</p>
 							</figure>
@@ -299,8 +306,8 @@
 									</div>
 								</nav>
 								<article class="media is-hidden" id="PDFBAC">
-									<figure class="media-left">
-										<p class="image is-48x48">
+									<figure class="media-left is-hidden-touch">
+										<p class="image is-1by1">
 											<img src="./assets/img/bac-SIN.png">
 										</p>
 									</figure>
@@ -362,9 +369,10 @@
 	</section>
 	<script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
 	<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
-	<script src="./assets/js/locomotive-scroll.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.7/pdfobject.min.js"></script>
-	<script src="../node_modules/@creativebulma/bulma-collapsible/dist/js/bulma-collapsible.min.js"></script>
+	<script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/locomotive-scroll.min.js"></script>
+	<script src="./assets/js/bulma-collapsible.min.js"></script>
 	<script src="./assets/js/index_2.js"></script>
 </body>
 </html>
