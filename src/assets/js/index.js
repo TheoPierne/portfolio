@@ -10,7 +10,7 @@
 })();
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register(location.href + '/assets/js/sw.js');
+    navigator.serviceWorker.register(location.href + 'assets/js/sw.js');
 }
 
 document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
