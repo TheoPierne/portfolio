@@ -10,7 +10,9 @@
 })();
 
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register(location.href + 'assets/js/sw.js')
+	navigator.serviceWorker.register(location.href + 'assets/js/sw.js', {
+		scope: './'
+	})
 	.then((serviceWorker) => {
 		console.log('Service Worker enregistré !');
 	})
@@ -26,7 +28,7 @@ const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|NokiaBrowse
 const projectsData = {
 	"ddd-irr": {
 		logo: {
-			url: './assets/img/logoMano.png', 
+			url: '/assets/img/logoMano.png', 
 			alt: 'logo projet dissociateur de doigts'
 		},
 		title: "Dissociateur de doigts",
@@ -80,7 +82,7 @@ const projectsData = {
 	},
 	portfolio: {
 		logo: {
-			url: './assets/img/bitmoji_2.png',
+			url: '/assets/img/bitmoji_2.png',
 			alt: 'Bitmoji Théo Pierné'
 		},
 		title: "Portfolio de Théo Pierné",
