@@ -13,7 +13,9 @@ const addToCache = [
 '/assets/img/loritz.jpg',
 '/assets/img/bts-SNIR.png',
 '/assets/img/bac-SIN.png',
-'/assets/img/fcc-long-dark.png'
+'/assets/img/fcc-long-dark.png',
+'/assets/img/flower.png',
+'https://i.imgur.com/m67XYDX.png'
 ];
 const cacheVersion = 'theopierne-cache-v1';
 

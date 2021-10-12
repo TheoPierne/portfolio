@@ -43,7 +43,7 @@ const projectsData = {
 	},
 	flower: {
 		logo: {
-			url: 'https://cdn.discordapp.com/avatars/476671594962354177/3368fd06f12380353d74761a1835a4d9.png', 
+			url: '/assets/img/flower.png', 
 			alt: 'logo flower-bot'
 		},
 		title: "Flower-Bot",
