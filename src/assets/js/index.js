@@ -9,6 +9,10 @@
 	console.log(scroll)*/
 })();
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register(location.href + '/assets/js/sw.js');
+}
+
 document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
 
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|NokiaBrowser|Opera Mini/i.test(navigator.userAgent);
