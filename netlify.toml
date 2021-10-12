@@ -22,7 +22,7 @@
   for = "/*"
 
   [headers.values]
-    X-Frame-Options = "DENY"
+    X-Frame-Options = "sameorigin"
     X-XSS-Protection = "1; mode=block"
 
 	cache-control = '''
