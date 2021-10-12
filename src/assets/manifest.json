@@ -3,6 +3,7 @@
     "background_color": "#636363",
     "display": "standalone",
     "start_url": ".",
+    "lang": "fr",
     "name": "Th\u00e9o Piern\u00e9 - D\u00e9veloppeur Web Fullstack & D\u00e9veloppeur de Bot Discord",
     "short_name": "Th\u00e9o Piern\u00e9 - D\u00e9veloppeur Web Fullstack",
     "description": "Portfolio de Th\u00e9o Piern\u00e9 pr\u00e9sentant ses cr\u00e9ations et ses certifications.",
@@ -11,22 +12,27 @@
         {
             "src": "/assets/img/icon/icon-192x192.png",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"any maskable"
         },
         {
             "src": "/assets/img/icon/icon-256x256.png",
             "sizes": "256x256",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"any maskable"
+            
         },
         {
             "src": "/assets/img/icon/icon-384x384.png",
             "sizes": "384x384",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"any maskable"
         },
         {
             "src": "/assets/img/icon/icon-512x512.png",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/png",
+            "purpose":"any maskable"
         }
     ]
 }
