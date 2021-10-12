@@ -1,17 +1,3 @@
-/* Style V1 */
-
-.slider-navigation-next, .slider-navigation-previous {
-	right: 15px;
-}
-
-.slider-navigation-previous {
-	left: 15px;
-}
-
-/* Fin Style V1 */
-
-/* Style V2 */
-
 .back-animation {
 	color: transparent !important;
 	-webkit-text-fill-color: transparent;
@@ -80,7 +66,7 @@ img.logo-discord {
 	position: absolute;
 	z-index: 2;
 	transform: translate(-30%, -40%);
-	background: url("heart.png") no-repeat;
+	background: url("../img/heart.png") no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 	animation: fave-heart 0s steps(28);
@@ -116,5 +102,3 @@ img.emoji {
 		width: 100%;
 	}
 }
-
-/* Fin Style V2 */
