@@ -1,5 +1,5 @@
 const addToCache = [
-'/', 
+'/index.html', 
 '/assets/js/', 
 '/assets/img/', 
 '/assets/css/', 
