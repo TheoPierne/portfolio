@@ -80,7 +80,7 @@ img.logo-discord {
 	position: absolute;
 	z-index: 2;
 	transform: translate(-30%, -40%);
-	background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+	background: url("assets/img/heart.png") no-repeat;
 	background-position: 0 0;
 	cursor: pointer;
 	animation: fave-heart 0s steps(28);

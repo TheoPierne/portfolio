@@ -1,5 +1,5 @@
 const addToCache = [
-'/index.html', 
+'/', 
 '/assets/doc/loritz_plaquette_snir.pdf',
 '/assets/doc/loritz_plaquette_sin.pdf',
 '/assets/img/back.png',
