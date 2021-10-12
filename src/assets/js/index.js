@@ -93,8 +93,8 @@ const PDFViewerOptions = {
 	fallbackLink: "<p>Ce navigateur ne supporte pas les lecteurs PDF, vous pouvez télécharger le PDF <a href='[url]' target='_blank'>ici</a></p>"
 };
 
-PDFObject.embed("https://www4.ac-nancy-metz.fr/lyc-loritz/telechargements/lycee/formations/bts/plaquettes/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
-PDFObject.embed("https://www4.ac-nancy-metz.fr/lyc-loritz/telechargements/lycee/formations/bac/plaquettes/loritz_plaquette_sin.pdf", "#PDFViewerBAC", PDFViewerOptions);
+PDFObject.embed("/assets/doc/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
+PDFObject.embed("/assets/doc/loritz_plaquette_sin.pdf", "#PDFViewerBAC", PDFViewerOptions);
 
 const $categorySelector = document.getElementById('categorySelector');
 const $projectSelector = document.querySelectorAll('.panel-block:not(#hiddenOption):not(label)');
