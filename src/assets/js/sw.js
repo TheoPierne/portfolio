@@ -21,7 +21,7 @@ const cacheVersion = 'theopierne-cache-v1';
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(cacheVersion).then((cache) => {
-            return Promise.all(prefetchedURLs.map((url) => {
+            return Promise.all(addToCache.map((url) => {
                 return fetch(url).then(res => {
                     if (res.status >= 400) throw Error('request failed');
                     return cache.put(url, res);
