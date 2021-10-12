@@ -1,7 +1,7 @@
 const addToCache = [
 '/',
 '/assets/webfonts/fa-brands-400.woff2',
-'//assets/webfonts/fa-solid-900.woff2',
+'/assets/webfonts/fa-solid-900.woff2',
 '/assets/doc/loritz_plaquette_snir.pdf',
 '/assets/doc/loritz_plaquette_sin.pdf',
 '/assets/img/back.png',
