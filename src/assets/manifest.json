@@ -1,0 +1,33 @@
+{
+    "theme_color": "#ffffff",
+    "background_color": "#636363",
+    "display": "browser",
+    "scope": "/",
+    "start_url": "https://theopierne.netlify.app/",
+    "name": "Th\u00e9o Piern\u00e9 - D\u00e9veloppeur Web Fullstack & D\u00e9veloppeur de Bot Discord",
+    "short_name": "Th\u00e9o Piern\u00e9 - D\u00e9veloppeur Web Fullstack",
+    "description": "Portfolio de Th\u00e9o Piern\u00e9 pr\u00e9sentant ses cr\u00e9ations et ses certifications.",
+    "categories": ["portfolio", "business", "jobs"],
+    "icons": [
+        {
+            "src": "/assets/img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
