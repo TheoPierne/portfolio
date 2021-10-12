@@ -10,7 +10,7 @@
 })();
 
 if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register(location.href + 'assets/js/sw.js', {
+	navigator.serviceWorker.register(location.href + 'sw.js', {
 		scope: './'
 	})
 	.then((serviceWorker) => {
