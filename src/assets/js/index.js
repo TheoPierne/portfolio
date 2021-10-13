@@ -1,6 +1,6 @@
 (function () {
 	const scroll = new LocomotiveScroll({
-		el: document,
+		el: document.querySelector('[data-scroll-container]'),
 		smooth: true,
 		direction: 'vertical',
 		scrollFromAnywhere: true,
