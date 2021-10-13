@@ -16,7 +16,7 @@ const addToCache = [
 '/assets/img/flower.png',
 'https://i.imgur.com/m67XYDX.png'
 ];
-const cacheVersion = 'theopierne-cache-v1';
+const cacheVersion = 'theopierne-cache-v1.0.1';
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
