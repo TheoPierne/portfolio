@@ -1,23 +1,17 @@
 (function () {
-	/*const scroll = new LocomotiveScroll({
+	const scroll = new LocomotiveScroll({
 		el: document,
 		smooth: true,
 		direction: 'vertical',
 		scrollFromAnywhere: true,
 		reloadOnContextChange: true
 	});
-	console.log(scroll)*/
+	console.log(scroll)
 })();
 
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register(location.href + 'sw.js', {
 		scope: './'
-	})
-	.then((serviceWorker) => {
-		console.log('Service Worker enregistré !');
-	})
-	.catch((err) => {
-		console.error("L'enregistrement du Service Worker a échoué !");
 	});
 }
 
