@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://theopierne.netlify.app/sitemap.xml
+Sitemap: https://theopierne.fr/sitemap.xml
