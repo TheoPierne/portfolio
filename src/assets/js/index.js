@@ -1,12 +1,12 @@
 (function () {
-	const scroll = new LocomotiveScroll({
+	/*const scroll = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
 		smooth: true,
 		direction: 'vertical',
 		scrollFromAnywhere: true,
 		// reloadOnContextChange: true
 	});
-	console.log(scroll)
+	console.log(scroll)*/
 })();
 
 if ('serviceWorker' in navigator) {
