@@ -2,8 +2,10 @@
 	const scroll = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
 		smooth: true,
-		direction: 'vertical',
-		scrollFromAnywhere: true,
+		getSpeed: true,
+		getDirection: true,
+		// direction: 'vertical',
+		// scrollFromAnywhere: true,
 		// reloadOnContextChange: true
 	});
 	console.log(scroll)
