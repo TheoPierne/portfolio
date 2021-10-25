@@ -4,9 +4,8 @@
 		smooth: true,
 		getSpeed: true,
 		getDirection: true,
-		// direction: 'vertical',
-		// scrollFromAnywhere: true,
-		// reloadOnContextChange: true
+		direction: 'vertical',
+		scrollFromAnywhere: true
 	});
 	console.log(scroll)
 })();
