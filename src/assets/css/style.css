@@ -40,6 +40,10 @@ html.is-ready .home-transition:nth-child(3) {
     transition-delay: .2s
 }
 
+.home-transition h1, .home-transition h2, .home-transition img {
+    display: inline-block
+}
+
 .box.is-black {
 	background-color: #23272A;
 	border-radius: 6px;
