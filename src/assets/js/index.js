@@ -98,7 +98,7 @@ twemoji.parse(document.body);
 const accordions = bulmaCollapsible.attach();
 
 const PDFViewerOptions = {
-	fallbackLink: "<p>Ce navigateur ne supporte pas les lecteurs PDF, vous pouvez télécharger le PDF <a href='[url]' target='_blank'>ici</a></p>"
+	fallbackLink: `<p>Ce navigateur ne supporte pas les lecteurs PDF, vous pouvez télécharger le PDF <a class="button is-dark" href='[url]' target='_blank'>ici</a></p>`
 };
 
 PDFObject.embed("/assets/doc/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
