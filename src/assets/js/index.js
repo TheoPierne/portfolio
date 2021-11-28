@@ -18,7 +18,7 @@ if ('serviceWorker' in navigator) {
 	});
 }
 
-console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #090924; color: #whitesmoke; font-size:10px; padding:8px 10px 6px; border-radius:4px;")
+console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #090924; color: whitesmoke; font-size:10px; padding:8px 10px 6px; border-radius:4px;")
 
 document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
 
