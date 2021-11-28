@@ -6,8 +6,6 @@
 	-webkit-background-clip: text; 
 	background-position: 0 0; 
 	animation: back 20s linear infinite;
-	transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
-	transition-delay: .1s;
 }
 
 @keyframes back {
@@ -17,6 +15,21 @@
 	100% {
 		background-position: 1920px 0;
 	}
+}
+
+.home-transition{
+	display: block;
+    opacity: 0;
+    transform: translateY(100%) rotateX(-80deg);
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1)
+}
+
+.home-transition:first-child{
+	opacity: 1;
+    transform: none;
+	transition-delay: .1s;
 }
 
 .box.is-black {
