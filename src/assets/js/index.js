@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register(location.href + 'sw.js', {
+		scope: './'
+	});
+}
+
 (function () {
 	const scroll = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
@@ -9,14 +15,7 @@
 		reloadOnContextChange: true,
 		scrollFromAnywhere: true
 	});
-	console.log(scroll)
 })();
-
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register(location.href + 'sw.js', {
-		scope: './'
-	});
-}
 
 console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #7a7a7a; color: #ededed; font-size:10px; padding:8px 10px 6px; border-radius:4px;")
 
