@@ -6,6 +6,8 @@
 	-webkit-background-clip: text; 
 	background-position: 0 0; 
 	animation: back 20s linear infinite;
+	transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1);
+	transition-delay: .1s;
 }
 
 @keyframes back {
