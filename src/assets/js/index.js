@@ -1,3 +1,8 @@
+setTimeout((function() {
+	document.documentElement.classList.add("is-ready")
+}
+), 300);
+
 (function () {
 	const scroll = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
