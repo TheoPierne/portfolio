@@ -41,7 +41,7 @@ html.is-ready .home-transition:nth-child(3) {
 }
 
 .home-transition h1, .home-transition h2, .home-transition img {
-    display: inline-block
+    display: inherit;
 }
 
 .box.is-black {
