@@ -18,6 +18,7 @@ if ('serviceWorker' in navigator) {
 }
 
 document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
+document.getElementById('copyright').innerText = `© ${new Date().getFullYear()} Théo Pierné`;
 
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|NokiaBrowser|Opera Mini/i.test(navigator.userAgent);
 
