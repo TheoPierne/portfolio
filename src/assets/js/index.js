@@ -64,7 +64,7 @@ const projectsData = {
 			start: '2021-02-05',
 			end: 'now'
 		},
-		githubLink: null
+		githubLink: 'https://github.com/TheoPierne/spot-sdk-js'
 	},
 	acnhMsgBox: {
 		logo: {},
