@@ -64,7 +64,19 @@ const projectsData = {
 			start: '2021-02-05',
 			end: 'now'
 		},
-		githubLink: 'https://github.com/TheoPierne/spot-sdk-js'
+		githubLink: 'https://github.com/TheoPierne/spot-sdk-js/'
+	},
+	'mythical-launcher': {
+		logo: {},
+		title: "Mythical Launcher",
+		subtitle: "Launcher customisé pour le jeu vidéo Minecraft.",
+		description: "Ce launcher à été crée pour le serveur Mythical, pour permettre aux joueurs de rejoindre le serveur avec les bon mods ainsi que la bonne verion de Minecraft.",
+		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langages:</strong> HTML5, CSS3, JavaScript, EJS</p><p><strong>Librairies/API:</strong> Electron, EJS, Got, Semver, UUID, Eslint, Minecraft Protocol</p>",
+		date: {
+			start: '2022-04-10',
+			end: 'now'
+		},
+		githubLink: 'https://github.com/TheoPierne/MythicalLauncher/'
 	},
 	acnhMsgBox: {
 		logo: {},
@@ -76,7 +88,7 @@ const projectsData = {
 			start: '2019-04-24',
 			end: '2019-04-26'
 		},
-		githubLink: 'https://github.com/Waiit/acnhMsgBox'
+		githubLink: 'https://github.com/TheoPierne/acnhMsgBox/'
 	},
 	portfolio: {
 		logo: {
@@ -91,7 +103,7 @@ const projectsData = {
 			start: '2021-10-02',
 			end: 'now'
 		},
-		githubLink: 'https://github.com/TheoPierne/portfolio'
+		githubLink: 'https://github.com/TheoPierne/portfolio/'
 	}
 }
 
