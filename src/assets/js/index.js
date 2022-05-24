@@ -24,6 +24,42 @@ document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date()
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|NokiaBrowser|Opera Mini/i.test(navigator.userAgent);
 
 const projectsData = {
+	"spot.js": {
+		logo: {},
+		title: "Spot SDK Node.js",
+		subtitle: "Librairie non officielle Node.js permettant de contrôler le robot <a class=\"is-underlined\" target=\"_blank\" href=\"https://www.bostondynamics.com/spot\">Spot de Boston Dynamics</a>",
+		description: "Librairie non officielle Node.js permettant de contrôler le robot Spot de Boston Dynamics, cette librairie est encore un travail en cours de développement !",
+		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langage:</strong> JavaScript</p><p><strong>Frameworks:</strong> gRPC</p><p><strong>Librairies:</strong> Google-Protobuf, gRPC-js, OpenCV4Nodejs, Tesseract.js, Lodash, Winston</p>",
+		date: {
+			start: '2021-02-05',
+			end: 'now'
+		},
+		githubLink: 'https://github.com/TheoPierne/spot-sdk-js/'
+	},
+	"spot-server.js": {
+		logo: {},
+		title: "Spot Server Node.js",
+		subtitle: "Un simple serveur pour simuler un robot Spot à des fins de tests.",
+		description: "Pour faciliter le développement du SDK du robot Spot en JavaScript, j'ai créé ce serveur qui simule les réponses aux requêtes du SDK que pourrait renvoyer le robot Spot !",
+		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langage:</strong> JavaScript</p><p><strong>Frameworks:</strong> gRPC</p><p><strong>Librairies:</strong> Google-Protobuf, gRPC-js OpenCV4Nodejs, Lodash, Winston</p>",
+		date: {
+			start: '2021-02-05',
+			end: 'now'
+		},
+		githubLink: 'https://github.com/TheoPierne/spot-server-js/'
+	},
+	'mythical-launcher': {
+		logo: {},
+		title: "Mythical Launcher",
+		subtitle: "Launcher customisé pour le jeu vidéo Minecraft.",
+		description: "Ce launcher à été crée pour le serveur Mythical, pour permettre aux joueurs de rejoindre le serveur avec les bon mods ainsi que la bonne verion de Minecraft.",
+		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langages:</strong> HTML5, CSS3, JavaScript, EJS</p><p><strong>Librairies/API:</strong> Electron, EJS, Got, Semver, UUID, Eslint, Minecraft Protocol</p>",
+		date: {
+			start: '2022-04-10',
+			end: 'now'
+		},
+		githubLink: 'https://github.com/TheoPierne/MythicalLauncher/'
+	},
 	"ddd-irr": {
 		logo: {
 			url: '/assets/img/logoMano.png', 
@@ -53,30 +89,6 @@ const projectsData = {
 			end: 'now'
 		},
 		githubLink: null
-	},
-	"spot.js": {
-		logo: {},
-		title: "Spot SDK Node.js",
-		subtitle: "Librairie non officielle Node.js permettant de contrôler le robot <a class=\"is-underlined\" target=\"_blank\" href=\"https://www.bostondynamics.com/spot\">Spot de Boston Dynamics</a>",
-		description: "Librairie non officielle Node.js permettant de contrôler le robot Spot de Boston Dynamics, cette librairie est encore un travail en cours de développement !",
-		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langage:</strong> JavaScript</p><p><strong>Frameworks:</strong> gRPC</p><p><strong>Librairies:</strong> Google-Protobuf, Tesseract.js</p>",
-		date: {
-			start: '2021-02-05',
-			end: 'now'
-		},
-		githubLink: 'https://github.com/TheoPierne/spot-sdk-js/'
-	},
-	'mythical-launcher': {
-		logo: {},
-		title: "Mythical Launcher",
-		subtitle: "Launcher customisé pour le jeu vidéo Minecraft.",
-		description: "Ce launcher à été crée pour le serveur Mythical, pour permettre aux joueurs de rejoindre le serveur avec les bon mods ainsi que la bonne verion de Minecraft.",
-		tools: "<p><strong>IDE:</strong> Sublime Text 3</p><p><strong>Langages:</strong> HTML5, CSS3, JavaScript, EJS</p><p><strong>Librairies/API:</strong> Electron, EJS, Got, Semver, UUID, Eslint, Minecraft Protocol</p>",
-		date: {
-			start: '2022-04-10',
-			end: 'now'
-		},
-		githubLink: 'https://github.com/TheoPierne/MythicalLauncher/'
 	},
 	acnhMsgBox: {
 		logo: {},
