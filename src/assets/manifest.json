@@ -26,7 +26,6 @@
             "sizes": "256x256",
             "type": "image/png",
             "purpose":"maskable"
-
         },
         {
             "src": "/assets/img/icon/icon-384x384.png",
