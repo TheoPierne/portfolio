@@ -14,6 +14,12 @@ const addToCache = [
 '/assets/img/bac-SIN.png',
 '/assets/img/fcc-long-dark.png',
 '/assets/img/flower.png',
+'/assets/manifest.json',
+'/assets/img/icon/16x16.ico',
+'/assets/img/icon/32x32.ico',
+'/assets/img/icon/48x48.ico',
+'/assets/img/icon/64x64.ico',
+'/assets/img/icon/64x64.ico',
 'https://i.imgur.com/m67XYDX.png'
 ];
 const cacheVersion = 'theopierne-cache-v1.0.2';
