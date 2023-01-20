@@ -18,6 +18,11 @@
   to = "/robots.txt"
   status = 200
 
+[[redirects]]
+  from = "/oembed"
+  to = "/oembed.json"
+  status = 200
+
 [[headers]]
   for = "/*"
 

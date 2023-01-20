@@ -1,0 +1,13 @@
+{
+	"html": "<iframe style=\"border-radius: 12px\" width=\"100%\" height=\"152\" title=\"Théo Pierné - Développeur Web Fullstack & Développeur de Bot Discord\" frameborder=\"0\" allowfullscreen allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\" src=\"https://theopierne.fr/embed/links?utm_source=oembed\"></iframe>",
+	"width": 456,
+	"height": 152,
+	"version": "1.0",
+	"provider_name": "TheoPierne",
+	"provider_url": "https://theopierne.fr/",
+	"type": "rich",
+	"title": "Théo Pierné - Développeur Web Fullstack & Développeur de Bot Discord",
+	"thumbnail_url": "https://theopierne.fr/assets/img/logo.png",
+	"thumbnail_width": 300,
+	"thumbnail_height": 300
+}
