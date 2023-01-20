@@ -3,9 +3,16 @@
   publish = "src/"
 
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "/oembed"
+  to = "/oembed.json"
+  status = 200
+  force = true
+  headers = {Content-Type = 'application/json'}
 
 [[redirects]]
   from = "/sitemap.xml"
@@ -17,13 +24,6 @@
   from = "/robots.txt"
   to = "/robots.txt"
   status = 200
-
-[[redirects]]
-  from = "/oembed"
-  to = "/oembed.json"
-  status = 200
-  force = true
-  headers = {Content-Type = 'application/json'}
 
 [[headers]]
   for = "/*"
