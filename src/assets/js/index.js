@@ -232,9 +232,9 @@ $buttonDrowDown.forEach(e => {
 	e.onclick = () => {
 		e.children[0].children[0].classList.toggle('open');
 		if(e.dataset.target === 'BTS'){			
-			document.getElementById('PDFBTS').classList.toggle('is-hidden');
+			document.getElementById('PDFBTS').classList.toggle('is-sr-only');
 		}else if(e.dataset.target === 'BAC'){
-			document.getElementById('PDFBAC').classList.toggle('is-hidden');
+			document.getElementById('PDFBAC').classList.toggle('is-sr-only');
 		}
 	}
 });
