@@ -19,7 +19,7 @@ const addToCache = [
 '/assets/img/icon/32x32.ico',
 '/assets/img/icon/48x48.ico',
 '/assets/img/icon/64x64.ico',
-'/assets/img/icon/64x64.ico',
+'/assets/img/icon/128x128.ico',
 'https://i.imgur.com/m67XYDX.png'
 ];
 const cacheVersion = 'theopierne-cache-v1.0.3';
