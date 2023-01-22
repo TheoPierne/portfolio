@@ -27,6 +27,16 @@ const cacheVersion = 'theopierne-cache-v1.0.2';
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open(cacheVersion).then((cache) => {
+            return cache.addAll(addToCache);
+        }).catch((err) => {
+            console.error(err);
+        })
+    )
+});
+
+/*self.addEventListener('install', function(event) {
+    event.waitUntil(
+        caches.open(cacheVersion).then((cache) => {
             return Promise.all(addToCache.map((url) => {
                 return fetch(url).then(res => {
                     if (res.status >= 400) throw Error('request failed');
@@ -37,7 +47,7 @@ self.addEventListener('install', function(event) {
             console.error(err);
         })
     )
-});
+});*/
 
 self.addEventListener('activate', evt => {
   evt.waitUntil(
@@ -55,6 +65,10 @@ self.addEventListener('fetch', function(event) {
     caches.match(event.request).then(function(res) {
       if (res) return res;
       return fetch(event.request).then(function(res) {
+        const responseClone = res.clone();
+        caches.open(cacheVersion).then(function (cache) {
+          cache.put(event.request, responseClone);
+        });
         return res;
       }).catch(function(err) {
         console.error(err);
