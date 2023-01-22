@@ -22,7 +22,7 @@ const addToCache = [
 '/assets/img/icon/64x64.ico',
 'https://i.imgur.com/m67XYDX.png'
 ];
-const cacheVersion = 'theopierne-cache-v1.0.2';
+const cacheVersion = 'theopierne-cache-v1.0.3';
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
