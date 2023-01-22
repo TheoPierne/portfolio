@@ -22,7 +22,7 @@ const addToCache = [
 '/assets/img/icon/128x128.ico',
 'https://i.imgur.com/m67XYDX.png'
 ];
-const cacheVersion = 'theopierne-cache-v1.0.3';
+const cacheVersion = 'theopierne-cache-v1.0.4';
 
 self.addEventListener('install', function(event) {
     event.waitUntil(
@@ -33,21 +33,6 @@ self.addEventListener('install', function(event) {
         })
     )
 });
-
-/*self.addEventListener('install', function(event) {
-    event.waitUntil(
-        caches.open(cacheVersion).then((cache) => {
-            return Promise.all(addToCache.map((url) => {
-                return fetch(url).then(res => {
-                    if (res.status >= 400) throw Error('request failed');
-                    return cache.put(url, res);
-                });
-            }));
-        }).catch((err) => {
-            console.error(err);
-        })
-    )
-});*/
 
 self.addEventListener('activate', evt => {
   evt.waitUntil(
