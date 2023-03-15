@@ -8,6 +8,16 @@
   status = 200
 
 [[redirects]]
+  from = "/fr"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en"
+  to = "/en_GB.html"
+  status = 200
+
+[[redirects]]
   from = "/oembed"
   to = "/oembed.json"
   status = 200
