@@ -17,11 +17,19 @@ if ('serviceWorker' in navigator) {
 	});
 })();
 
-console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #7a7a7a; color: #ededed; font-size:10px; padding:8px 10px 6px; border-radius:4px;")
+console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #7a7a7a; color: #ededed; font-size:10px; padding:8px 10px 6px; border-radius:4px;");
 
-document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
+const isEn = location.pathname.includes('en');
 
-const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|NokiaBrowser|Opera Mini/i.test(navigator.userAgent);
+console.log('isEn', isEn);
+
+fetch(`assets/translation/${isEn ? 'en.json' : 'fr.json'}`)
+.then(res => res.json())
+.then(data => {
+	i18n.translator.add(data);
+});
+
+document.querySelector('.panel-heading').innerText = i18n('project', { year: new Date().getFullYear() });
 
 const projectsData = {
 	"spot.js": {
@@ -124,7 +132,7 @@ twemoji.parse(document.body);
 const accordions = bulmaCollapsible.attach();
 
 const PDFViewerOptions = {
-	fallbackLink: `<p><a class="button is-dark" href='[url]' target='_blank'><span>Accès PDF</span><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a></p>`
+	fallbackLink: `<p><a class="button is-dark" href='[url]' target='_blank'><span>${i18n('pdf')}</span><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a></p>`
 };
 
 PDFObject.embed("/assets/doc/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
@@ -147,19 +155,21 @@ HTMLCollection.prototype.forEach = Array.prototype.forEach;
 
 $categorySelector.children.forEach(e => {
 	e.onclick = () => {
-		let $activeCategorySelector = document.querySelector('.is-active.category');
-		if(!e.isEqualNode($activeCategorySelector)){
+		const $activeCategorySelector = document.querySelector('.is-active.category');
+		
+		if (!e.isEqualNode($activeCategorySelector)) {
 			e.classList.add('is-active', 'category');
 			$activeCategorySelector.classList.remove('is-active', 'category');
-			if(e.dataset.type === 'all'){
+
+			if (e.dataset.type === 'all') {
 				$projectSelector.forEach(i => {
-					if((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked){
+					if ((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked) {
 						i.classList.remove('is-hidden');
 					}
 				});
-			}else if(e.dataset.type === 'public'){
+			} else if(e.dataset.type === 'public') {
 				$projectSelector.forEach(i => {
-					if((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked){ 
+					if ((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked) { 
 						if(i.dataset.category !== 'public'){
 							i.classList.add('is-hidden');
 						}else{
@@ -167,61 +177,64 @@ $categorySelector.children.forEach(e => {
 						}
 					}
 				});
-			}else if(e.dataset.type === 'private'){
+			} else if(e.dataset.type === 'private') {
 				$projectSelector.forEach(i => {
-					if((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked){
-						if(i.dataset.category !== 'private'){
+					if ((i.id !== 'hiddenOption' && !i.classList.contains('hidden-project') && i.dataset.category !== 'search') || $showHiddenProjects.checked) {
+						if (i.dataset.category !== 'private') {
 							i.classList.add('is-hidden');
-						}else{
+						} else {
 							i.classList.remove('is-hidden');
 						}
 					}
 				});
 			}
 		}
-	};
+	}
 });
 
 $projectSelector.forEach(e => {
 	e.onclick = () => {
-		let $activeProjectSelector = document.querySelector('.panel-block.is-active');
-		if(!e.isEqualNode($activeProjectSelector) && e.dataset.category !== 'search'){
+		const $activeProjectSelector = document.querySelector('.panel-block.is-active');
+		if (!e.isEqualNode($activeProjectSelector) && e.dataset.category !== 'search') {
 			e.classList.add('is-active');
 			$activeProjectSelector.classList.remove('is-active');
-			let data = projectsData[e.dataset.target];
-			if(Object.keys(data.logo).length == 0){
+			const data = projectsData[e.dataset.target];
+
+			if (Object.keys(data.logo).length == 0) {
 				$projectCardContent.querySelector('.media-left').classList.add('is-hidden');
-			}else{
+			} else {
 				$projectCardContent.querySelector('.media-left').classList.remove('is-hidden');
 				$projectCardContent.querySelector('img').src = data.logo.url;
 				$projectCardContent.querySelector('img').alt = data.logo.alt;
-			} 
-			if(data.githubLink != null){
+			}
+
+			if (data.githubLink != null) {
 				$projectCardContent.querySelector('.github-link').classList.remove('is-hidden');
 				$projectCardContent.querySelector('.github-link').nextElementSibling.classList.remove('is-hidden');
 				$projectCardContent.querySelector('.github-link').href = data.githubLink;
-			}else{
+			} else {
 				$projectCardContent.querySelector('.github-link').classList.add('is-hidden');
 				$projectCardContent.querySelector('.github-link').nextElementSibling.classList.add('is-hidden');
 			}
+
 			$projectCardContent.querySelector('p.title').innerText = data.title;
 			$projectCardContent.querySelector('p.subtitle').innerHTML = data.subtitle;
 			$projectCardContent.querySelector('.content').querySelector('p').innerHTML = data.description;
 			$projectCardContent.querySelector('.message-body-content').innerHTML = data.tools;
 			$projectCardContent.querySelector('time.first').dateTime = data.date.start;
 			$projectCardContent.querySelector('time.first').innerText = getDate(data.date.start);
-			$projectCardContent.querySelector('time.second').dateTime = (data.date.end == 'now') ? new Date().toISOString().split('T')[0] : getDate(data.date.end);
-			$projectCardContent.querySelector('time.second').innerText = (data.date.end == 'now') ? 'Maintenant' : getDate(data.date.end);
+			$projectCardContent.querySelector('time.second').dateTime = (data.date.end === 'now') ? new Date().toISOString().split('T')[0] : getDate(data.date.end);
+			$projectCardContent.querySelector('time.second').innerText = (data.date.end === 'now') ? i18n('now') : getDate(data.date.end);
 		}
 	};
 });
 
 $showHiddenProjects.onchange = () => {
-	if($showHiddenProjects.checked){
+	if ($showHiddenProjects.checked) {
 		$hiddenProject.forEach(e => {
 			e.classList.remove('is-hidden');
 		});
-	}else{
+	} else {
 		$hiddenProject.forEach(e => {
 			e.classList.add('is-hidden');
 		});
@@ -231,9 +244,9 @@ $showHiddenProjects.onchange = () => {
 $buttonDrowDown.forEach(e => {
 	e.onclick = () => {
 		e.children[0].children[0].classList.toggle('open');
-		if(e.dataset.target === 'BTS'){			
+		if (e.dataset.target === 'BTS') {			
 			document.getElementById('PDFBTS').classList.toggle('is-sr-only');
-		}else if(e.dataset.target === 'BAC'){
+		} else if(e.dataset.target === 'BAC') {
 			document.getElementById('PDFBAC').classList.toggle('is-sr-only');
 		}
 	}
@@ -242,10 +255,10 @@ $buttonDrowDown.forEach(e => {
 document.onkeydown = e => {
 	if(e.altKey){
 		e.preventDefault();
-		if(!isHiddenOptionShow){
+		if (!isHiddenOptionShow) {
 			isHiddenOptionShow = true;
 			$hiddenOption.classList.remove('is-hidden');
-		}else{
+		} else {
 			isHiddenOptionShow = false;
 			$hiddenOption.classList.add('is-hidden');
 		}
