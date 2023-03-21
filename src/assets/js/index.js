@@ -19,12 +19,14 @@ if ('serviceWorker' in navigator) {
 
 console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #7a7a7a; color: #ededed; font-size:10px; padding:8px 10px 6px; border-radius:4px;");
 
+const isEn = location.pathname.includes('en');
+
 twemoji.parse(document.body);
 
 const accordions = bulmaCollapsible.attach();
 
 const PDFViewerOptions = {
-	fallbackLink: `<p><a class="button is-dark" href='[url]' target='_blank'><span>${i18n('pdf')}</span><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a></p>`
+	fallbackLink: `<p><a class="button is-dark" href='[url]' target='_blank'><span>${isEn ? 'PDF access' : 'Accès PDF'}</span><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a></p>`
 };
 
 PDFObject.embed("/assets/doc/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
@@ -116,7 +118,7 @@ $projectSelector.forEach(e => {
 			$projectCardContent.querySelector('time.first').dateTime = data.date.start;
 			$projectCardContent.querySelector('time.first').innerText = getDate(data.date.start);
 			$projectCardContent.querySelector('time.second').dateTime = (data.date.end === 'now') ? new Date().toISOString().split('T')[0] : getDate(data.date.end);
-			$projectCardContent.querySelector('time.second').innerText = (data.date.end === 'now') ? i18n('now') : getDate(data.date.end);
+			$projectCardContent.querySelector('time.second').innerText = (data.date.end === 'now') ? (isEn ? 'Now' : 'Maintenant') : getDate(data.date.end);
 		}
 	};
 });
