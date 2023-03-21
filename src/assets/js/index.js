@@ -19,6 +19,8 @@ if ('serviceWorker' in navigator) {
 
 console.log("%c  Dev by Théo Pierné — https://theopierne.fr  ", "background-color: #7a7a7a; color: #ededed; font-size:10px; padding:8px 10px 6px; border-radius:4px;");
 
+document.querySelector('.panel-heading').innerText = `#PROJETS 2017-${new Date().getFullYear()}`;
+
 const isEn = location.pathname.includes('en');
 
 twemoji.parse(document.body);
