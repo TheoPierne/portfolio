@@ -31,6 +31,7 @@ const PDFViewerOptions = {
 	fallbackLink: `<p><a class="button is-dark" href='[url]' target='_blank'><span>${isEn ? 'PDF access' : 'Accès PDF'}</span><span class="icon is-small"><i class="fas fa-external-link-alt"></i></span></a></p>`
 };
 
+PDFObject.embed('/assets/doc/iut_plaquette_lp_ciasie.pdf', '#PDFViewerLP', PDFViewerOptions);
 PDFObject.embed("/assets/doc/loritz_plaquette_snir.pdf", "#PDFViewerBTS", PDFViewerOptions);
 PDFObject.embed("/assets/doc/loritz_plaquette_sin.pdf", "#PDFViewerBAC", PDFViewerOptions);
 
@@ -142,8 +143,10 @@ $buttonDrowDown.forEach(e => {
 		e.children[0].children[0].classList.toggle('open');
 		if (e.dataset.target === 'BTS') {			
 			document.getElementById('PDFBTS').classList.toggle('is-sr-only');
-		} else if(e.dataset.target === 'BAC') {
+		} else if (e.dataset.target === 'BAC') {
 			document.getElementById('PDFBAC').classList.toggle('is-sr-only');
+		} else if (e.dataset.target === 'LPCIASIE') {
+			document.getElementById('PDFLPCIASIE').classList.toggle('is-sr-only');
 		}
 	}
 });
