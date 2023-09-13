@@ -6,6 +6,7 @@ const addToCache = [
   '/assets/doc/loritz_plaquette_snir.pdf',
   '/assets/doc/loritz_plaquette_sin.pdf',
   '/assets/doc/iut_plaquette_lp_ciasie.pdf',
+  '/assets/doc/ocr_plaquette_master.pdf',
   '/assets/img/back.png',
   '/assets/img/heart.png',
   '/assets/img/bitmoji_3.png',
@@ -13,6 +14,7 @@ const addToCache = [
   '/assets/img/bitmoji_1.png',
   '/assets/img/logoMano.png',
   '/assets/img/loritz.jpg',
+  '/assets/img/logo-ocr.jpg',
   '/assets/img/logo-iut.png',
   '/assets/img/bts-SNIR.png',
   '/assets/img/bac-SIN.png',
@@ -26,7 +28,7 @@ const addToCache = [
   '/assets/img/icon/128x128.ico',
   'https://i.imgur.com/m67XYDX.png'
 ];
-const cacheVersion = 'theopierne-cache-v1.0.6';
+const cacheVersion = 'theopierne-cache-v1.0.7';
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
